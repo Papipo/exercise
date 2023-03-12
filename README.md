@@ -11,7 +11,17 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 # GET / Endpoint
 
 There is a single enpoint that under the hood just calls `PointsServer.fetch()`.
-It will just return whatever the GenServer did.
+It will just return whatever the GenServer did. The format of the JSON payload is as follows:
+
+```JSON
+{
+  "timestamp":"2023-03-11T23:15:34.353848Z",
+  "users":[
+    {"id":4376232,"points":94},
+    {"id":4376234,"points":73}
+  ]
+}
+```
 
 # PointsServer
 
